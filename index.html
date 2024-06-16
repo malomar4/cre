@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Temas de Examen de Revalida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage" class="home-container">
+        <h1>Repaso de Revalida</h1>
+        <div class="button-row">
+            <button onclick="loadQuestions('examen1')">Examen 1</button>
+            <button onclick="loadQuestions('examen2')">Examen 2</button>
+        </div>
+        <div class="button-row">
+            <button onclick="loadQuestions('examen3')">Examen 3</button>
+            <button onclick="loadQuestions('examen4')">Examen 4</button>
+        </div>
+    </div>
+
+    <div id="container" class="container" style="display: none;">
+        <div id="question" class="question"></div>
+        <div id="options" class="options"></div>
+        <div id="result" class="result"></div>
+        <div class="button-container">
+            <button id="nextBtn" class="nextBtn">Siguiente Pregunta</button>
+            <button id="homeBtn" class="homeBtn">Volver a la Página Principal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
